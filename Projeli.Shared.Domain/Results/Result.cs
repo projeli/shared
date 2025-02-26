@@ -1,4 +1,4 @@
-﻿namespace Projeli.WikiService.Domain.Results;
+﻿namespace Projeli.Shared.Domain.Results;
 
 public class Result<T>(T? data, string? message = null, bool success = true, Dictionary<string, string[]>? errors = null) : IResult<T>
 {

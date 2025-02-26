@@ -1,4 +1,4 @@
-﻿namespace Projeli.WikiService.Domain.Results;
+﻿namespace Projeli.Shared.Domain.Results;
 
 public interface IResult<out T>
 {

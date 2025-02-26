@@ -1,4 +1,4 @@
-﻿namespace Projeli.WikiService.Domain.Results;
+﻿namespace Projeli.Shared.Domain.Results;
 
 public class PagedResult<T>(List<T>? data = null, string? message = "", bool success = true, Dictionary<string, string[]>? errors = null, int page = 0, int pageSize = 0, int totalCount = 0, int totalPages = 0) : Result<List<T>>(data, message, success, errors)
 {
