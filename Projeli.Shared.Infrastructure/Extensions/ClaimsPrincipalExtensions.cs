@@ -24,7 +24,7 @@ public static class ClaimsPrincipalExtensions
         {
             return principal.GetId();
         }
-        catch (UnauthorizedException)
+        catch (Exception e) when (e is UnauthorizedException or NullReferenceException)
         {
             return null;
         }
