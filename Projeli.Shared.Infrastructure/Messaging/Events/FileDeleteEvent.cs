@@ -3,14 +3,11 @@ using Projeli.Shared.Domain.Models.Files;
 
 namespace Projeli.Shared.Infrastructure.Messaging.Events;
 
-[EntityName("FileStore")]
-public class FileStoreEvent
+[EntityName("FileDelete")]
+public class FileDeleteEvent
 {
-    public string FileName { get; set; } = null!;
-    public string FileExtension { get; set; } = null!;
-    public string MimeType { get; set; } = null!;
+    public string FilePath { get; set; } = null!;
     public FileType FileType { get; set; } = null!;
     public string? ParentId { get; set; }
-    public byte[] FileData { get; set; } = null!;
     public string UserId { get; set; } = null!;
 }

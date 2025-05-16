@@ -1,10 +1,11 @@
 ﻿namespace Projeli.Shared.Domain.Models.Files;
 
-public class FileTypes
+public abstract class FileTypes
 {
     public static readonly FileType ProjectLogo = new()
     {
-        Name = "projects",
+        Id = "project-logo",
+        Subdirectory = "projects",
         MimeTypes =
         [
             "image/jpeg",

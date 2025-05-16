@@ -13,4 +13,5 @@ public class FileStoreFailedEvent
     public string? ParentId { get; set; }
     public byte[] FileData { get; set; } = null!;
     public string[] ErrorMessages { get; set; } = null!;
+    public string UserId { get; set; } = null!;
 }
