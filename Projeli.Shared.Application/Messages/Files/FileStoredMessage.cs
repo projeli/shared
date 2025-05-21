@@ -1,10 +1,10 @@
 ﻿using MassTransit;
 using Projeli.Shared.Domain.Models.Files;
 
-namespace Projeli.Shared.Infrastructure.Messaging.Events;
+namespace Projeli.Shared.Application.Messages.Files;
 
-[EntityName("FileDelete")]
-public class FileDeleteEvent
+[EntityName("FileStored")]
+public class FileStoredMessage
 {
     public string FilePath { get; set; } = null!;
     public FileType FileType { get; set; } = null!;

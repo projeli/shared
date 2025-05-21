@@ -1,10 +1,10 @@
 ﻿using MassTransit;
 using Projeli.Shared.Domain.Models.Files;
 
-namespace Projeli.Shared.Infrastructure.Messaging.Events;
+namespace Projeli.Shared.Application.Messages.Files;
 
 [EntityName("FileStore")]
-public class FileStoreEvent
+public class FileStoreMessage
 {
     public string FileName { get; set; } = null!;
     public string FileExtension { get; set; } = null!;
