@@ -8,5 +8,6 @@ public class ProjectUpdatedDetailsMessage
     public Ulid ProjectId { get; set; }
     public string ProjectName { get; set; }
     public string ProjectSlug { get; set; }
+    public string? ProjectImageUrl { get; set; }
     public string UserId { get; set; }
 }
